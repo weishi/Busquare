@@ -1,0 +1,26 @@
+/* Wei Shi, weishi, 15437, 2012/1/30 */
+@charset "utf-8";
+.edit {
+	width: 50%;
+	clear:both;
+	margin:auto;
+	background-color:#EBF2FC;
+	border-radius:10px;
+	padding:10px;
+}
+#fs legend {
+	font-size:20px;
+	line-height:35px;
+	padding:3px;
+}
+.entry label {
+	font-size:20px;
+}
+.entry {
+	font-size:20px;
+	line-height:35px;
+	padding:3px;
+}
+.entry textarea{
+	width:70%;
+}

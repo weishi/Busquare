@@ -1,0 +1,52 @@
+/* Wei Shi, weishi, 15437, 2012/1/30 */
+@charset "utf-8";
+.result {
+	margin-top:20px;
+	padding-top:20px;
+	clear:both;
+}
+.resultHeader {
+	clear:both;
+	height:35px;
+	width:80%;
+	margin:5px auto;
+	border-radius:10px;
+	padding:5px;
+	font-size:26px;
+	font-weight:bold;
+}
+.resultEntry {
+	clear:both;
+	height:70px;
+	width:80%;
+	margin:5px auto;
+	border: 1px dashed;
+	border-radius:10px;
+	padding:5px;
+}
+.resultEntry:hover {
+	background-color:#EBF2FC;
+}
+.friendPic {
+	float:left;
+	height:70px;
+	border-radius:5px;
+}
+.friendName {
+	float:left;
+	line-height:70px;
+	width:40%;
+	text-align:center;
+	font-size:26px;
+}
+.friendAction {
+	float:left;
+	line-height:70px;
+	width:40%;
+	height:70px;
+	text-align:center;
+	padding-top:15px;
+}
+.friendAction input{
+	font-size:26px;
+}

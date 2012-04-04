@@ -1,8 +1,7 @@
 /* Wei Shi, weishi, 15437, 2012/1/30 */
 @charset "utf-8";
 body {
-	margin-left:auto;
-	margin-right:auto;
+	margin:0px auto;
 	width:100%;
 	font-family:Helvetica, sans-serif;
 	text-align:center;

@@ -10,41 +10,28 @@
 </head>
 
 <body>
-<div id="header">
-  <div id="title">Busquare</div>
-</div>
-<div class="stats">
-  <div class="statsEntry">Users<br>
-    <div>7</div>
-  </div>
-  <div class="statsEntry">Friend Relations<br>
-    <div>27</div>
-  </div>
-  <div id="signUpLink"><a href="register.html">Sign Up</a></div>
-</div>
-<div class="login">
-  <form id="form1" name="form1" method="post" action="home.html">
-    <fieldset id="fs">
-      <legend>Login</legend>
-      <div class="entry">
-        <label>Username</label>
-        <input name="username" type="text" />
+<div class="container">
+  <div id="content">
+    <div id="home-top">
+     <img src="images/header.png" width="960" height="200" />
+      <div id="login">
+        <form id="form1" name="form1" method="post" action="home.html">
+            <div class="entry">
+              <label>Username</label>
+              <input name="username" type="text" />
+            </div>
+            <div class="entry">
+              <label>Password</label>
+              <input name="password" type="password" />
+            </div>
+            <div class="entry">
+              <input name="" type="submit" value="Sign in" />
+            </div>
+        </form>
       </div>
-      <div class="entry">
-        <label>Password</label>
-        <input name="password" type="password" />
-      </div>
-      <div class="entry">
-        <input name="" type="submit" value="Sign in" />
-      </div>
-    </fieldset>
-  </form>
-</div>
-<div class="popularList">
-	<div class="popularHeader">Most Recent Reports</div>
-  <div class="popularEntry"><img class="friendPic" src="images/avator.jpg"/>
-    <div class="friendName">John Doe</div>
-    <div class="friendNum">32 friends</div>
+    </div>
+    
+    <div id="home-bottom"> <img src="images/home.png" width="960" height="700" /> </div>
   </div>
 </div>
 </body>

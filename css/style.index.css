@@ -100,22 +100,25 @@
 	text-align:center;
 	font-size:26px;
 }
+#home-top{
+	position:relative;
+}
 /* Login */
-.login {
-	width: 38%;
-	float:right;
-	height: 150px;
+#login {
+	position:absolute;
+	top:5px;
+	right:5px;
+	width: 250px;
 	background-color:#EBF2FC;
 	border-radius:10px;
 	padding:10px;
+	opacity:0.8;
 }
-#fs legend {
-	font-size:20px;
-	line-height:35px;
-	padding:3px;
+.img-top{
+	
 }
 .entry label {
-	font-size:20px;
+	font-size:16px;
 }
 .entry * {
 	vertical-align:middle;

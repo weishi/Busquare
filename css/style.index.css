@@ -102,20 +102,41 @@
 }
 #home-top{
 	position:relative;
+	border-radius:10px;
+}
+#home-bottom{
+	border-radius:10px;
 }
 /* Login */
 #login {
 	position:absolute;
-	top:5px;
-	right:5px;
-	width: 250px;
-	background-color:#EBF2FC;
+	top:15px;
+	right:15px;
+	width: 225px;
+	background:rgba(255,255,255,0.6);
 	border-radius:10px;
 	padding:10px;
-	opacity:0.8;
 }
-.img-top{
-	
+.entry{
+	margin:0px auto;
+	padding-top:5px;
+}
+.textEntry{
+	width:80%;
+	border-width:2px;;
+	border-color:#999;
+	border-radius:5px;
+	height:25px;
+}
+.textEntry:focus{
+	border-width:2px;
+	border-color:#FFF;
+}
+.btn{
+	background:linear-gradient(#2DADDC,#0271BF);
+}
+.img-home{
+	border-radius:10px;
 }
 .entry label {
 	font-size:16px;

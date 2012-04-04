@@ -12,26 +12,23 @@
 <body>
 <div class="container">
   <div id="content">
-    <div id="home-top">
-     <img src="images/header.png" width="960" height="200" />
+    <div id="home-top"> <img class="img-home" src="images/header.png"/>
       <div id="login">
         <form id="form1" name="form1" method="post" action="home.html">
-            <div class="entry">
-              <label>Username</label>
-              <input name="username" type="text" />
-            </div>
-            <div class="entry">
-              <label>Password</label>
-              <input name="password" type="password" />
-            </div>
-            <div class="entry">
-              <input name="" type="submit" value="Sign in" />
-            </div>
+          <div class="entry">
+            <input class="textEntry" placeholder="Enter your username" name="username" type="text" />
+          </div>
+          <div class="entry">
+            <input class="textEntry" placeholder="Enter your password" name="password" type="password" />
+          </div>
+          <div class="entry">
+            <input class="btn" name="signin" type="submit" value="Sign in" />
+            <input class="btn" name="signup" type="submit" value="Sign up" />
+          </div>
         </form>
       </div>
     </div>
-    
-    <div id="home-bottom"> <img src="images/home.png" width="960" height="700" /> </div>
+    <div id="home-bottom"> <img class="img-home" src="images/home.png"/> </div>
   </div>
 </div>
 </body>

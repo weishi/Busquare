@@ -1,10 +1,18 @@
 /* Wei Shi, weishi, 15437, 2012/1/30 */
 @charset "utf-8";
+#content {
+	width:100%;
+	margin-top:30px;
+}
+
+#sidebar {
+	float:right;
+	width:34%;
+}
 /* Main */
-.main {
-	clear:left;
+#mainbar {
 	float:left;
-	width:65%;
+	width:64%;
 }
 .newStory {
 	clear:both;
@@ -15,8 +23,11 @@
 	margin:auto;
 }
 /* newsFeed */
-
-.newsFeed {
+#newsHeader{
+	text-align:left;
+}
+#newsFeed li{
+	margin-top:4px;
 }
 .feedEntry {
 	clear:both;
@@ -31,50 +42,9 @@
 .feedEntry:hover {
 	background-color:#EBF2FC;
 }
-.postPic {
-	width:10%;
-	float:left;
-}
-.postBody {
-	width:87%;
-	float:left;
-	background-color:transparent;
-}
-.content {
-	padding:8px;
-	background-color:transparent;
-}
-.actions {
-	margin-left:16px;
-	margin-right: 16px;
-	float:left;
-	margin-bottom:10px;
-}
-.actions a {
-	text-decoration:none;
-	display:block;
-}
-.actions a:hover {
-	background-color:white;
-	border-radius:5px;
-}
-.meta {
-	float:left;
-}
-.comment {
-	clear:both;
-}
-.storyPic {
-	width:100%;
-	border-radius:10px;
-}
+
 /* Side bar */
 
-.side {
-	clear:right;
-	float: right;
-	width:33%;
-}
 .bigPic {
 	float:left;
 	width:128px;
@@ -82,15 +52,17 @@
 	border-radius:15px;
 }
 .profileInfo {
-	float:left;
+	list-style-type:none;
+	text-align:left;
 }
 .profileEdit {
 	clear:both;
 }
-.friendsList {
+.mySection {
 	clear:both;
+	background-color:#999999;
 }
-.friendHeader {
+.listHeader {
 	clear:both;
 	height:20px;
 	margin:5px auto;
@@ -101,26 +73,19 @@
 	text-align:center;
 	font-size:18px;
 }
-.friendPic {
-	float:left;
-	width:32px;
-	height:32px;
-	margin:3px;
-}
-.friendName{
+.itemName{
 	float:left;
 	margin:3px;
 	margin-left:16px;
 }
-.friendAction{
+.itemAction{
 	float:left;
 	margin-top:8px;
 	margin-left:16px;
 	display:table-cell;
 	vertical-align:middle;
 }
-
-.friendEntry {
+.listEntry {
 	clear:both;
 	width:100%;
 	line-height:36px;

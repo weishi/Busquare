@@ -6,7 +6,6 @@ body {
 	font-family:Helvetica, sans-serif;
 	text-align:center;
 }
-
 div {
 	display:block;
 }
@@ -15,11 +14,36 @@ div {
 	clear:both;
 	background:#6699CC;
 	margin:0pt auto;
-	height:40px;
-	line-height:40px;
+	height:50px;
+	line-height:50px;
 	width:100%;
 }
-
+#header img{
+	float:left;
+}
+#nav {
+	float:left;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	margin-left:10px;
+}
+#nav li {
+	float:left;
+}
+#nav li a{
+	margin-left:3px;
+	margin-right:3px;
+	padding-left:3px;
+	padding-right:3px;
+	display:block;
+	text-decoration:none;
+	color:#FFFFFF;
+}
+#nav li a:hover{
+	color:#6699CC;
+	background-color:#FFF;
+}
 #title {
 	float:left;
 	padding-left:10px;
@@ -37,37 +61,26 @@ div {
 #searchInput form {
 	line-height:35px;
 }
-#logout{
+#logout {
 	float:right;
 	margin-left:5px;
 	margin-right:10px;
 }
-#logout a{
+#logout a {
 	text-decoration:none;
 	border-radius:5px;
 	padding:5px;
 	color:white;
 }
-#logout a:hover{
+#logout a:hover {
 	background-color:white;
 	color:blue;
 }
-
 /* Main site */
-.container{
+.container {
+	clear:both;
 	width:960px;
 	margin:0pt auto;
-}
-#content{
-	width:100%;
-}
-#mainbar{
-	float:left;
-	width:64%;
-}
-#sidebar{
-	float:right;
-	width:34%;
 }
 
 /* buttons */
@@ -76,53 +89,34 @@ div {
 	font-size: 14px;
 	color: #ffffff;
 	padding: 5px 15px;
-	background: -moz-linear-gradient(
-		top,
-		#42aaff 0%,
-		#003366);
-	background: -webkit-gradient(
-		linear, left top, left bottom, 
-		from(#42aaff),
-		to(#003366));
+	background: -moz-linear-gradient(  top,  #42aaff 0%,  #003366);
+	background: -webkit-gradient(  linear, left top, left bottom,  from(#42aaff),  to(#003366));
 	border-radius: 10px;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
 	border: 1px solid #003366;
 	-moz-box-shadow:
-		0px 1px 3px rgba(000,000,000,0.5),
-		inset 0px 0px 1px rgba(255,255,255,0.5);
+ 0px 1px 3px rgba(000,000,000,0.5),  inset 0px 0px 1px rgba(255,255,255,0.5);
 	-webkit-box-shadow:
-		0px 1px 3px rgba(000,000,000,0.5),
-		inset 0px 0px 1px rgba(255,255,255,0.5);
+ 0px 1px 3px rgba(000,000,000,0.5),  inset 0px 0px 1px rgba(255,255,255,0.5);
 	text-shadow:
-		0px -1px 0px rgba(000,000,000,0.7),
-		0px 1px 0px rgba(255,255,255,0.3);
+ 0px -1px 0px rgba(000,000,000,0.7),  0px 1px 0px rgba(255,255,255,0.3);
 }
-
 .btn:hover {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 14px;
 	color: #ffffff;
 	padding: 5px 15px;
-	background: -moz-linear-gradient(
-		top,
-		#5fb7fa 0%,
-		#0557a8);
-	background: -webkit-gradient(
-		linear, left top, left bottom, 
-		from(#5fb7fa),
-		to(#0557a8));
+	background: -moz-linear-gradient(  top,  #5fb7fa 0%,  #0557a8);
+	background: -webkit-gradient(  linear, left top, left bottom,  from(#5fb7fa),  to(#0557a8));
 	border-radius: 10px;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
 	border: 1px solid #003366;
 	-moz-box-shadow:
-		0px 1px 3px rgba(000,000,000,0.5),
-		inset 0px 0px 1px rgba(255,255,255,0.5);
+ 0px 1px 3px rgba(000,000,000,0.5),  inset 0px 0px 1px rgba(255,255,255,0.5);
 	-webkit-box-shadow:
-		0px 1px 3px rgba(000,000,000,0.5),
-		inset 0px 0px 1px rgba(255,255,255,0.5);
+ 0px 1px 3px rgba(000,000,000,0.5),  inset 0px 0px 1px rgba(255,255,255,0.5);
 	text-shadow:
-		0px -1px 0px rgba(000,000,000,0.7),
-		0px 1px 0px rgba(255,255,255,0.3);
+ 0px -1px 0px rgba(000,000,000,0.7),  0px 1px 0px rgba(255,255,255,0.3);
 }

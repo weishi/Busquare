@@ -6,26 +6,89 @@
 <title>Home</title>
 <link href="css/style.home.css" rel="stylesheet" type="text/css" />
 <link href="css/style.general.css" rel="stylesheet" type="text/css" />
+<link rel="icon" type="image/ico" href="favicon.ico">
 </head>
 
 <body>
 <div id="header">
-  <div class="container">
-  <div id="title">Busquare</div>
-  <div id="logout"><a href="#">Logout</a></div>
-  <div id="searchInput">
-    <form action="search.html" method="get">
-      <input name="inputtext" type="text" />
-      <input name="" type="submit" value="Search" />
-    </form>
-  </div>
+  <div class="container"><img src="images/lcon.png"/>
+    <div id="title">{Busquare}</div>
+    <ul id="nav">
+      <li><a href="">Home</a></li>
+      <li>|</li>
+      <li><a href="">Lookup Schedule</a></li>
+      <li>|</li>
+      <li><a href="">Report Location</a></li>
+    </ul>
+    <div id="logout"><a href="#">Logout</a></div>
+    <div id="searchInput">
+      <form action="search.html" method="get">
+        <input name="inputtext" type="text" />
+        <input name="" type="submit" value="Search" />
+      </form>
+    </div>
   </div>
 </div>
-
-<div class="container">
-  <div id="content">
-    <div id="sidebar">side stuff</div>
-    <div id="mainbar">main stuff</div>
+<div id="content">
+  <div class="container">
+    <div id="sidebar"> 
+      <!--My info -->
+      <div class="userInfo">
+        <div class="profilePic"> <img class="bigPic" src="images/avator.jpg" /> </div>
+        <ul class="profileInfo">
+          <li>Username: DummyUser3</li>
+          <li>Other info: blah</li>
+          <li><a href="profile.html">Edit Profile</a></li>
+        </ul>
+      </div>
+      <!--My fav buses -->
+      <div class="mySection">
+        <div class="listHeader">My favorite buses</div>
+        <div class="listEntry">
+          <div class="itemName">61D</div>
+          <form action"" method="post">
+            <input class="itemAction btn" name="remove" type="button"
+					value="Remove" />
+          </form>
+        </div>
+        <div class="listEntry">
+          <div class="itemName">61D</div>
+          <form action"" method="post">
+            <input class="itemAction btn" name="remove" type="button"
+					value="Remove" />
+          </form>
+        </div>
+      </div>
+      <!--My recent reports -->
+      <div class="mySection">
+        <div class="listHeader">My recent reports</div>
+        <div class="listEntry">
+          <div class="itemName">2012-4-1 13:49:25 <b>61D</b></div>
+          <form action"" method="post">
+            <input class="itemAction btn" name="remove" type="button"
+					value="Remove" />
+          </form>
+        </div>
+        <div class="listEntry">
+          <div class="itemName">2012-4-1 13:49:25 <b>54C</b></div>
+          <form action"" method="post">
+            <input class="itemAction btn" name="remove" type="button"
+					value="Remove" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="mainbar">
+      <div id="newsHeader">Reports updates</div>
+      <ul id="newsFeed">
+        <li>2012-4-1 13:49:25 <b>61D</b> is near location (121,31) -- <b>DummyUser1</b></li>
+        <li>2012-4-1 13:49:25 <b>61D</b> is near location (121,31) -- <b>DummyUser1</b></li>
+        <li>2012-4-1 13:49:25 <b>61D</b> is near location (121,31) -- <b>DummyUser1</b></li>
+        <li>2012-4-1 13:49:25 <b>61D</b> is near location (121,31) -- <b>DummyUser1</b></li>
+        <li>2012-4-1 13:49:25 <b>61D</b> is near location (121,31) -- <b>DummyUser1</b></li>
+        <li>2012-4-1 13:49:25 <b>61D</b> is near location (121,31) -- <b>DummyUser1</b></li>
+      </ul>
+    </div>
   </div>
 </div>
 </body>

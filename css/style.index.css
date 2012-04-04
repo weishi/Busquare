@@ -35,78 +35,14 @@
 .statsEntry div:hover {
 	background-color:white;
 }
-#signUpLink {
-	clear:both;
-	text-align:center;
-}
-#signUpLink a {
-	font-size:36px;
-	font-weight:bold;
-	text-decoration:none;
-	color:#06C;
-	border-radius:5px;
-	text-align:center;
-	display:inline-block;
-	width:35%;
-}
-#signUpLink a:hover {
-	background-color:#390;
-	color:white;
-}
-.popularList {
-	margin-top:20px;
-	padding-top:20px;
-	clear:both;
-}
-.popularHeader {
-	clear:both;
-	height:30px;
-	margin:5px auto;
-	border-bottom: 1px double;
-	padding:5px;
-	line-height:30px;
-	width:100%;
-	text-align:center;
-	font-size:26px;
-}
-.popularEntry {
-	clear:both;
-	height:70px;
-	width:80%;
-	margin:5px auto;
-	border: 1px dashed;
-	border-radius:10px;
-	padding:5px;
-}
-.popularEntry:hover {
-	background-color:#EBF2FC;
-}
-.friendPic {
-	float:left;
-	height:70px;
-	border-radius:5px;
-}
-.friendName {
-	float:left;
-	line-height:70px;
-	width:40%;
-	text-align:center;
-	font-size:26px;
-}
-.friendNum {
-	float:left;
-	line-height:70px;
-	width:40%;
-	text-align:center;
-	font-size:26px;
-}
+
+
 #home-top{
 	position:relative;
 	border-radius:10px;
 }
-#home-bottom{
-	border-radius:10px;
-}
+
+
 /* Login */
 #login {
 	position:absolute;
@@ -132,15 +68,42 @@
 	border-width:2px;
 	border-color:#FFF;
 }
-.btn{
-	background:linear-gradient(#2DADDC,#0271BF);
-}
 .img-home{
 	border-radius:10px;
 }
-.entry label {
-	font-size:16px;
-}
 .entry * {
 	vertical-align:middle;
+}
+
+/* Bottom */
+#home-bottom{
+	position:relative;
+	border-radius:10px;
+}
+#board{
+	position:absolute;
+	top:110px;
+	left:410px;
+	width:470px;
+	height:320px;
+}
+#board div{
+	width:48%;
+	height:245px;
+	border-radius:10px;
+	font-weight:bold;
+	font-size:48px;
+	margin:3px;
+	padding-top:65px;
+}
+#board div:hover{
+	color:#F00;
+}
+#board-left{
+	float:left;
+	background-color:#FF0;
+}
+#board-right{
+	float:right;
+	background-color:#66FF00;
 }

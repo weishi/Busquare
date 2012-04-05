@@ -4,6 +4,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Home</title>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAjYacuGm5n7wkYPCEBOY34OTDabHfRqGI&sensor=true"></script>
+<script type="text/javascript" src="javascript/gmap.js"></script>
 <link href="css/style.lookup.css" rel="stylesheet" type="text/css" />
 <link href="css/style.general.css" rel="stylesheet" type="text/css" />
 <link rel="icon" type="image/ico" href="favicon.ico">
@@ -32,13 +34,13 @@
 <div id="content">
   <div class="container">
     <div id="sidebar"> 
-    
+      
       <!-- All bus list BEGIN -->
       <div id="routeList">
-      <select name="routeList">
-        <option value="1">61D</option>
-        <option value="2">54C</option>
-      </select>
+        <select name="routeList">
+          <option value="1">61D</option>
+          <option value="2">54C</option>
+        </select>
         <p>Locate nearest busstop</p>
         <ul id="busStops">
           <li><a href="">Morewood + Forbes</a></li>
@@ -49,10 +51,11 @@
       </div>
       <!--All bus list END --> 
     </div>
-    <!-- End Side Bar-->
+    <!-- End Side Bar--> 
     <!-- Begin Main Bar-->
     <div id="mainbar">
-      <div id="map">Google Map Placeholder</div>
+      <p>Finding your location: <span id="status">checking...</span></p>
+      <div id="mapcanvas">Google Map Placeholder</div>
       <p>Reports shown in map</p>
       <ul id="reportList">
         <li>2012-4-1 13:49:25 <b>61D</b> is near location (121,31) -- <b>DummyUser1</b></li>
@@ -61,7 +64,7 @@
         <li>2012-4-1 13:49:25 <b>61D</b> is near location (121,31) -- <b>DummyUser1</b></li>
       </ul>
     </div>
-    <!-- End Main Bar-->
+    <!-- End Main Bar--> 
   </div>
 </div>
 </body>

@@ -96,9 +96,7 @@
 	margin:3px;
 	padding-top:65px;
 }
-#board div:hover{
-	color:#F00;
-}
+
 #board-left{
 	float:left;
 	background-color:#FF0;
@@ -106,4 +104,10 @@
 #board-right{
 	float:right;
 	background-color:#66FF00;
+}
+#board div a{
+	text-decoration:none;
+}
+#board div a:hover{
+	color:#F00;
 }

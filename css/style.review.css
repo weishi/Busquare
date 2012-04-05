@@ -1,0 +1,46 @@
+@charset "utf-8";
+#content {
+	width:100%;
+	margin-top:30px;
+}
+
+#sidebar {
+	float:right;
+	width:34%;
+}
+/* Main */
+#mainbar {
+	float:left;
+	width:64%;
+}
+#map{
+	width:100%;
+	height:400px;
+	background-color:#FF99FF;
+	display:block;
+}
+
+/* Side bar */
+
+#reportInfo{
+	margin:0px auto;
+	list-style-type:none;
+	padding:0;
+	width:290px;;
+}
+#reportInfo li{
+	margin-top: 3px;
+	color:#000000;
+	text-decoration:none;
+	display:block;
+	width:100%;
+	background-color:#6699CC;
+	border-radius:5px;
+	font-size:14px;
+	line-height:24px;
+	padding:3px 10px;
+	text-align:left;
+}
+#reportInfo li:hover{
+	background-color:#CCC;
+}

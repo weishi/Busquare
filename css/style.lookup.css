@@ -1,0 +1,114 @@
+@charset "utf-8";
+/* Main */
+#reportList {
+	width:80%;
+	list-style-type:none;
+}
+
+#reportList li {
+	float:left;
+	color:white;
+	margin-bottom:15px;
+	width:100%;
+}
+
+#reportList li a {
+	display:block;
+	text-decoration:none;
+	width:100%;
+	overflow:auto;
+	border:1px dashed #999;
+	border-top-right-radius: 18px;
+}
+
+#reportList li a:hover {
+	color:#6699CC;
+	border:1px solid #CCC;
+}
+
+#reportList li a span {
+	display:block;
+	padding:5px;
+	line-height:18px;
+	font-family:Helvetica, Arial, sans-serif;
+	color:#000;
+	overflow:auto;
+}
+
+.routeName {
+	float:left;
+	width:40px;
+	font-size:16px;
+	font-weight:bold;
+	padding-right:5px;
+	background-color:#69C;
+}
+.location {
+	font-size:16px;
+	text-align:left;
+	background-color:#69C;
+}
+.comment {
+	clear:both;
+	text-align:left;
+	font-size:16px;
+	border-bottom:1px dashed #999;
+}
+.timestamp {
+	clear:both;
+	float:left;
+	font-size:16px;
+}
+.userName {
+	text-align:right;
+	font-size:16px;
+}
+
+/* Side bar */
+
+#routeList{
+	width:90%;
+	margin: 0px auto;
+	text-align:center;
+}
+#routeList select{
+	width:100%;
+}
+#routeList p{
+	margin-top: 3px;
+	color:#FFF;
+	text-decoration:none;
+	display:block;
+	width:100%;
+	background-color:#98BF21;
+	border-radius:5px;
+	font-size:22px;
+	line-height:32px;
+}
+#busStops{
+	margin:0px auto;
+	list-style-type:none;
+	padding:0;
+	width:290px;;
+}
+#busStops li{
+	width:290px;
+}
+#busStops li a{
+	margin-top: 3px;
+	color:#000000;
+	text-decoration:none;
+	display:block;
+	width:100%;
+	background-color:#6699CC;
+	border-radius:5px;
+	font-size:18px;
+	line-height:28px;
+	padding:3px 0;
+}
+#busStops li a:hover{
+	background-color:#CCC;
+}
+#busStops li a.curStop{
+	background-color:#98BF21;
+}

@@ -1,0 +1,86 @@
+@charset "utf-8";
+#content {
+	width:100%;
+	margin-top:30px;
+}
+
+#sidebar {
+	float:right;
+	width:34%;
+}
+/* Main */
+#mainbar {
+	float:left;
+	width:64%;
+	text-align:center;
+	margin: 0px auto;
+}
+#mapcanvas{
+	width:100%;
+	height:400px;
+	display:block;
+}
+#locationForm{
+	width:80%;
+	margin:0 auto;
+}
+
+label{
+	display:block;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	font-weight:700;
+	font-size:1em;
+	float:left;
+	clear:left;
+	width:70px;
+	text-align:left;
+}
+input, select{
+	width:300px;
+}
+/* Side bar */
+
+#routeList{
+	width:90%;
+	margin: 0px auto;
+	text-align:center;
+}
+#routeList select{
+	width:100%;
+}
+#routeList p{
+	margin-top: 3px;
+	color:#FFF;
+	text-decoration:none;
+	display:block;
+	width:100%;
+	background-color:#98BF21;
+	border-radius:5px;
+	font-size:22px;
+	line-height:32px;
+}
+#busStops{
+	margin:0px auto;
+	list-style-type:none;
+	padding:0;
+	width:290px;;
+}
+#busStops li{
+	width:290px;
+}
+#busStops li a{
+	margin-top: 3px;
+	color:#000000;
+	text-decoration:none;
+	display:block;
+	width:100%;
+	background-color:#6699CC;
+	border-radius:5px;
+	font-size:18px;
+	line-height:28px;
+	padding:3px 0;
+}
+#busStops li a:hover{
+	background-color:#CCC;
+}

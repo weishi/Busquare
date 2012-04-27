@@ -1,36 +1,35 @@
-/* Wei Shi, weishi, 15437, 2012/1/30 */
 @charset "utf-8";
-
 /* Main */
-#newsHeader {
-	text-align:left;
-}
-#newsFeed {
+#reportList {
 	width:80%;
 	list-style-type:none;
 }
-#newsFeed li {
+
+#reportList li {
 	float:left;
 	color:white;
 	margin-bottom:15px;
 	width:100%;
 }
-#newsFeed li a {
+
+#reportList li a {
 	display:block;
 	text-decoration:none;
 	width:100%;
 	overflow:auto;
 	border:1px dashed #999;
-	border-top-right-radius: 25px;
+	border-top-right-radius: 18px;
 }
-#newsFeed li a:hover {
+
+#reportList li a:hover {
 	color:#6699CC;
 	border:1px solid #CCC;
 }
-#newsFeed li a span {
+
+#reportList li a span {
 	display:block;
 	padding:5px;
-	line-height:25px;
+	line-height:18px;
 	font-family:Helvetica, Arial, sans-serif;
 	color:#000;
 	overflow:auto;
@@ -38,28 +37,30 @@
 .routeName {
 	float:left;
 	width:40px;
-	font-size:22px;
+	font-size:16px;
 	font-weight:bold;
 	padding-right:5px;
-	background-color:#98BF21;
+	background-color:#69C;
 }
 .location {
-	font-size:22px;
+	font-size:16px;
 	text-align:left;
 	background-color:#69C;
 }
 .comment {
 	clear:both;
 	text-align:left;
-	font-size:18px;
+	font-size:16px;
 	border-bottom:1px dashed #999;
 }
 .timestamp {
 	clear:both;
 	float:left;
-	font-size:18px;
+	font-size:16px;
 }
 .userName {
 	text-align:right;
-	font-size:18px;
+	font-size:16px;
 }
+
+/* Side bar */

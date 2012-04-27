@@ -49,7 +49,10 @@ public class FavRouteAction extends Action {
 			}
 			routeID = Integer.parseInt(form.getRouteID());
 			if (form.getAction().equals("remove")) {
-				favRouteDAO.delete(routeID);
+				if(favRouteDAO.deleteByPair(curUser.getId(),routeID)==false){
+					errors.add("Route not bookmarked.");
+					return "error.jsp";
+				}
 			} else {
 				FavRoute fav = new FavRoute();
 				fav.setBid(routeID);

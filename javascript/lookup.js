@@ -19,7 +19,9 @@ function error() {
 }
 
 function load(){
-	var infowindow = new google.maps.InfoWindow();
+	var infowindow = new google.maps.InfoWindow({
+	content:"holding"
+	});
 	var latlng;
 	if(typeof curStop=="undefined"){
 		latlng = new google.maps.LatLng(40.443, -79.942);
@@ -44,13 +46,12 @@ function load(){
 		      map: map, 
 		      title: content
 		  });
+		  marker.html=content;
 		  
-		google.maps.event.addListener(marker, 'click', (function(marker, i) {
-        return function() {
-          infowindow.setContent(content);
-          infowindow.open(map, marker);
-        }
-      })(marker, i));
+		google.maps.event.addListener(marker, 'click', function() {
+          infowindow.setContent(this.html);
+          infowindow.open(map, this);
+        });
 	}
 	 
 	//Add busstop points
@@ -68,13 +69,11 @@ function load(){
 		      icon: pinImage,
 		      title: stopPoint.stopName
 		  });
-		  
-		  google.maps.event.addListener(marker, 'click', (function(marker, i) {
-        return function() {
-          infowindow.setContent(stopPoint.stopName);
-          infowindow.open(map, marker);
-        }
-        })(marker, i));
+		  marker.html="Bus stop: "+stopPoint.stopName;
+		  google.maps.event.addListener(marker, 'click', function() {
+          infowindow.setContent(this.html);
+          infowindow.open(map, this);
+          });
 	}
 	if(typeof curStop!="undefined"){
 		pinColor = "98BF21";
@@ -92,7 +91,7 @@ function load(){
 		
 		google.maps.event.addListener(marker, 'click', (function(marker) {
         return function() {
-          infowindow.setContent(curStop.stopName);
+          infowindow.setContent("Bus stop: "+curStop.stopName);
           infowindow.open(map, marker);
         }
         })(marker));

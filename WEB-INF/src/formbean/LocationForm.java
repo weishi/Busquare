@@ -122,6 +122,11 @@ public class LocationForm extends FormBean {
 
 			if (comment != null && comment.matches(".*[<>\"].*")) {
 				errors.add("Comment may not contain angle brackets or quotes");
+				return errors;
+			}
+			if (comment.length() > 140) {
+				errors.add("Comment must be less than 140 chars");
+				return errors;
 			}
 
 		}

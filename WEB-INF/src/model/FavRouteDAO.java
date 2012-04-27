@@ -25,6 +25,20 @@ public class FavRouteDAO extends GenericDAO<FavRoute> {
 		return fr;
 	}
 
+	public boolean deleteByPair(int uid, int routeID) throws RollbackException {
+		FavRoute[] frList = readByUID(uid);
+		if (frList == null) {
+			return false;
+		}
+		for (FavRoute fr : frList) {
+			if (fr.getBid() == routeID) {
+				delete(fr.getId());
+				return true;
+			}
+		}
+		return false;
+	}
+
 	public boolean hasFav(int uid, int bid) throws RollbackException {
 		FavRoute[] fr = readByUID(uid);
 		if (fr == null) {

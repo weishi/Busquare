@@ -67,7 +67,6 @@ public class LookupAction extends Action {
 			request.setAttribute("stopList", stopList);
 			Route[] routeList = routeDAO.getRoutes();
 			request.setAttribute("routeList", routeList);
-			System.out.println(routeList.length);
 			if (routeList != null && routeList.length > 0) {
 				RouteStop[] rsList = routeStopDAO.readByBID(routeID);
 				for (RouteStop rs : rsList) {
@@ -95,7 +94,7 @@ public class LookupAction extends Action {
 				LookupForm form = formBeanFactory.create(request);
 				request.setAttribute("form", form);
 				if (!form.isPresent()) {
-					return "error.jsp";
+					return "lookup.jsp";
 				}
 				RouteStop[] rsList = routeStopDAO.readByBID(routeID);
 				float minDist = Float.MAX_VALUE;
